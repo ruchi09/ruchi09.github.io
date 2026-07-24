@@ -212,14 +212,14 @@ img {
 }
 .hero-title {
   font-weight: 700;
-  font-size: 44px;
+  font-size: 40px;
   line-height: 1.2;
   color: #fff;
   margin-top: 16px;
 }
 .hero-subtitle {
   color: #cbd5e1;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.8;
   font-family: "Inter", sans-serif;
 }
@@ -227,6 +227,9 @@ img {
   padding-top: 0;
 }
 .hero-portrait {
+  max-width: 280px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 40px;
 }
 .hero-portrait img {
@@ -515,6 +518,7 @@ span.ds-department {
     font-size: 0;
   }
   .ds-banner figure {
+    max-width: 220px;
     padding: 20px 0;
   }
   .ds-banner section {
@@ -523,8 +527,11 @@ span.ds-department {
     padding-top: 10px;
   }
   .hero-title {
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .hero-subtitle {
+    font-size: 15px;
   }
   .ds-about-section {
     padding-bottom: 30px;
