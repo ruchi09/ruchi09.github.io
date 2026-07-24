@@ -188,7 +188,8 @@ img {
   padding-right: 20px;
 }
 .royal-hero {
-  background: radial-gradient(
+  background:
+    radial-gradient(
       1200px 400px at 20% 10%,
       rgba(243, 201, 105, 0.08),
       transparent
@@ -223,9 +224,18 @@ img {
   font-family: "Inter", sans-serif;
 }
 .im-padding {
+  padding-top: 0;
+}
+.hero-portrait {
   padding-top: 40px;
 }
 .hero-portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 50%;
   border: 1px solid rgba(243, 201, 105, 0.25);
 }
 
