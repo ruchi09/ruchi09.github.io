@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World - v2</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="wallpaper">
+        <div class="actionsDiv">
+          <div class="comic-cue cue-checkout" aria-hidden="true">
+            <span>check these out</span>
+            <i class="comic-arrow"></i>
+          </div>
+          <div class="comic-cue cue-drag" aria-hidden="true">
+            <span>drag these</span>
+            <i class="comic-arrow"></i>
+          </div>
+          <div class="icons-container">
+            <div
+              class="desktop-icon"
+              data-category="frontend"
+              title="Open frontend projects"
+            >
+              <div class="icon-box">💻</div>
+              <span class="icon-label">Frontend</span>
+            </div>
+            <div
+              class="desktop-icon"
+              data-category="backend"
+              title="Open backend console"
+            >
+              <div class="icon-box">⚙️</div>
+              <span class="icon-label">Backend</span>
+            </div>
+            <div
+              class="desktop-icon"
+              data-category="ai"
+              title="Open AI projects"
+            >
+              <div class="icon-box">🤖</div>
+              <span class="icon-label">AI</span>
+            </div>
+            <div
+              class="desktop-icon"
+              data-category="research"
+              title="Open research papers"
+            >
+              <div class="icon-box">🔬</div>
+              <span class="icon-label">Research</span>
+            </div>
+            <div
+              class="desktop-icon"
+              data-category="innovation"
+              title="Open innovations"
+            >
+              <div class="icon-box">💡</div>
+              <span class="icon-label">Innovation</span>
+            </div>
+            <div
+              class="desktop-icon"
+              data-category="hackathons"
+              title="Open hackathon projects"
+            >
+              <div class="icon-box">🚀</div>
+              <span class="icon-label">Hackathons</span>
+            </div>
+            <div
+              class="desktop-icon"
+              data-category="linkedin"
+              data-url="https://www.linkedin.com/in/ruchi-saha"
+              title="Open LinkedIn profile"
+            >
+              <div class="icon-box linkedin-icon">in</div>
+              <span class="icon-label">Go to my LinkedIn profile</span>
+            </div>
+          </div>
+        </div>
+        <div class="activityDiv">
+          <div class="wallpaper-text">backend engineer</div>
+          <div class="terminal-window" id="backend-terminal">
+            <div class="terminal-header">
+              <div class="terminal-controls">
+                <button
+                  class="terminal-control terminal-close-btn"
+                  title="Close terminal"
+                  aria-label="Close terminal"
+                ></button>
+                <button
+                  class="terminal-control terminal-minimize"
+                  title="Minimize terminal"
+                  aria-label="Minimize terminal"
+                ></button>
+                <button
+                  class="terminal-control terminal-maximize"
+                  title="Toggle full screen"
+                  aria-label="Toggle full screen"
+                ></button>
+              </div>
+              <span class="terminal-title">▣ backend — zsh</span>
+            </div>
+            <div class="terminal-content">
+              <div class="terminal-line">$ Backend Services Running</div>
+              <div class="terminal-line">$ Server: localhost:5000</div>
+              <div class="terminal-line">$ Database: Connected</div>
+              <div class="terminal-line">$ API Endpoints: Active</div>
+              <div class="terminal-line">$ Listening for requests...</div>
+              <div class="terminal-cursor">▮</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="taskbar">
+        <div class="taskbar-left">
+          <button class="taskbar-btn menu-btn" title="Start Menu">⊞</button>
+          <div class="search-bar">
+            <span class="search-icon">🔍</span>
+            <input type="text" placeholder="Search" id="search-input" />
+          </div>
+          <div class="taskbar-icons">
+            <button
+              class="taskbar-icon-btn taskbar-app-btn mail-btn"
+              title="Contact me"
+            >
+              <span class="mail-icon" aria-hidden="true"></span>
+            </button>
+            <button
+              class="taskbar-icon-btn taskbar-app-btn resume-btn"
+              title="Download resume"
+              data-resume="../Ruchi_Saha_Resume_5YOE_Backend_2026.pdf"
+            >
+              <span class="folder-icon" aria-hidden="true"></span>
+            </button>
+            <button
+              class="taskbar-icon-btn taskbar-app-btn terminal-taskbar-btn"
+              id="terminal-taskbar-button"
+              title="Open terminal"
+              aria-label="Open terminal"
+              aria-pressed="false"
+              hidden
+            >
+              <span class="terminal-app-icon" aria-hidden="true">›_</span>
+            </button>
+            <div class="comic-cue cue-mail" aria-hidden="true">
+              <span>contact me</span>
+              <i class="comic-arrow"></i>
+            </div>
+            <div class="comic-cue cue-resume" aria-hidden="true">
+              <span>grab my resume</span>
+              <i class="comic-arrow"></i>
+            </div>
+          </div>
+        </div>
+        <div class="taskbar-right">
+          <button class="taskbar-icon-btn" title="Volume">🔊</button>
+          <button
+            class="taskbar-icon-btn language-btn"
+            title="Language"
+            id="language-btn"
+          >
+            ENG
+          </button>
+          <button
+            class="taskbar-icon-btn theme-toggle"
+            title="Toggle Theme"
+            id="theme-toggle"
+          >
+            ☀️
+          </button>
+          <div class="comic-cue cue-theme" aria-hidden="true">
+            <span>switch the mood</span>
+            <i class="comic-arrow"></i>
+          </div>
+          <div
+            class="speed-indicator"
+            title="Internet Speed"
+            id="speed-indicator"
+          >
+            <span class="speed-icon">📶</span>
+            <span class="speed-value" id="speed-value">--</span>
+          </div>
+          <div class="taskbar-time-date">
+            <div class="taskbar-time" id="current-time"></div>
+            <div class="taskbar-date" id="current-date"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
